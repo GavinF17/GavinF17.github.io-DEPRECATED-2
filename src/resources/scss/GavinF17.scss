@@ -1,0 +1,62 @@
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/utilities";
+
+@import "color";
+@import "text";
+
+$dot-size: 2px;
+$dot-space: 22px;
+
+$bg-color: $blue-1;
+$dot-color: $blue-3;
+
+body {
+  background: linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+  linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+  $dot-color;
+  background-size: $dot-space $dot-space;
+}
+
+
+.homepage-banner {
+  width: 100%;
+  height: 100vh;
+
+  .homepage-banner-content {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+.skill-icon {
+  position: fixed;
+  z-index: -1;
+
+  img {
+    width: 20vh;
+    height: 20vh;
+    opacity: 50%;
+    stroke: white;
+    stroke-width: 10px;
+  }
+}
+
+@for $i from 0 through 20 {
+  #skill-icon-#{$i} {
+    transform: translateY(-50%) translateX(-50%);
+
+    @if $i % 2 == 0 {
+      left: 5vw + ($i *10vw);
+    } @else {
+      left: 5vw + ($i *10vw);
+    }
+  }
+}

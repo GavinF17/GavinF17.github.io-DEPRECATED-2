@@ -1,0 +1,41 @@
+:root {
+  --blue-1: #F5F2FF;
+  --blue-2: #EAE6FE;
+  --blue-3: #CBC0FD;
+  --blue-4: #AB99FB;
+  --blue-5: #6D4DF8;
+  --blue-6: #2E01F5;
+  --blue-7: #2901DD;
+  --blue-8: #1C0193;
+  --blue-9: #15006E;
+  --blue-10: #0E004A;
+}
+
+[data-theme="light"] {
+  --blue-10: #F5F2FF;
+  --blue-9: #EAE6FE;
+  --blue-8: #CBC0FD;
+  --blue-7: #AB99FB;
+  --blue-6: #6D4DF8;
+  --blue-5: #2E01F5;
+  --blue-4: #2901DD;
+  --blue-3: #1C0193;
+  --blue-2: #15006E;
+  --blue-1: #0E004A;
+}
+
+$blue-1: var(--blue-1);
+$blue-2: var(--blue-2);
+$blue-3: var(--blue-3);
+$blue-4: var(--blue-4);
+$blue-5: var(--blue-5);
+$blue-6: var(--blue-6);
+$blue-7: var(--blue-7);
+$blue-8: var(--blue-8);
+$blue-9: var(--blue-9);
+$blue-10: var(--blue-10);
+
+.svg-color {
+  filter: invert(100%) sepia(42%) saturate(0%) hue-rotate(251deg) brightness(110%) contrast(100%);
+  stroke: $blue-8;
+}
