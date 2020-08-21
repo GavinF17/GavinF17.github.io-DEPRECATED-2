@@ -1,0 +1,2 @@
+(this["webpackJsonpgh-pages"]=this["webpackJsonpgh-pages"]||[]).push([[4],{40:function(e,a,n){"use strict";n.r(a);var s=n(0),t=n.n(s);a.default=function(e){var a=e.children;return t.a.createElement("div",{className:"general"},a)}}}]);
+//# sourceMappingURL=4.c8e1fec9.chunk.js.map
