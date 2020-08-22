@@ -1,22 +1,23 @@
 body {
   color: $blue-10;
+  overflow-wrap: break-spaces;
 }
 
 h1, .h1 {
-  font-size: 70px;
+  font-size: 60px;
   color: $blue-10;
   margin: 0;
 }
 
 h2, .h2 {
   color: $blue-7;
-  font-size: 50px;
+  font-size: 40px;
   margin: 0;
 }
 
 
 h3, .h3 {
   color: $blue-6;
-  font-size: 40px;
+  font-size: 30px;
   margin: 0;
 }
