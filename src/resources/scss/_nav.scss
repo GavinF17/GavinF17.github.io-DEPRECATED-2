@@ -1,0 +1,27 @@
+@import "node_modules/hamburgers/_sass/hamburgers/hamburgers";
+
+.navigation {
+  .navbar-toggler, .navbar-toggler:active, .navbar-toggler:hover, .navbar-toggler:focus, button {
+    padding: 0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .hamburger {
+    .hamburger-inner, :before, :after {
+      background-color: $blue-10 !important;
+    }
+  }
+
+  a {
+    color: $blue-10;
+    text-decoration: none;
+    font-size: medium;
+
+    &:active, &:hover {
+      color: $blue-8;
+    }
+  }
+}

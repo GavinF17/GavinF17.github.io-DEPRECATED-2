@@ -6,9 +6,13 @@
 // Optional
 @import "node_modules/bootstrap/scss/grid";
 @import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/nav";
+@import "node_modules/bootstrap/scss/transitions";
 
 @import "color";
 @import "text";
+@import "nav";
 
 $dot-size: 2px;
 $dot-space: 22px;
@@ -20,7 +24,6 @@ body {
   background: linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center, linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center, $dot-color;
   background-size: $dot-space $dot-space;
 }
-
 
 .homepage-banner {
   width: 100%;
