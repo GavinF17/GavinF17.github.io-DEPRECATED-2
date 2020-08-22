@@ -12,12 +12,13 @@ const Routes = () => {
 
   return (
     <BrowserRouter>
-      <Suspense fallback={() => <div/>}>
+      <Suspense fallback={<div/>}>
         <Layout>
           <Switch>
             {flattenedRoutes.map(route => (
               !route.children && (
                 <Route
+                  key={route.path}
                   path={route.path}
                   exact={route.exact}
                   component={route.component}
