@@ -12,7 +12,10 @@ const routes = {
     },
     {
       path: "/experience",
-      exact: true,
+      component: Experience
+    },
+    {
+      path: "/blog",
       component: Experience
     }
   ]
