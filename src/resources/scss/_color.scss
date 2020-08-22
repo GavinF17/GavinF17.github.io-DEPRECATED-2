@@ -1,17 +1,4 @@
 :root {
-  --blue-1: #F5F2FF;
-  --blue-2: #EAE6FE;
-  --blue-3: #CBC0FD;
-  --blue-4: #AB99FB;
-  --blue-5: #6D4DF8;
-  --blue-6: #2E01F5;
-  --blue-7: #2901DD;
-  --blue-8: #1C0193;
-  --blue-9: #15006E;
-  --blue-10: #0E004A;
-}
-
-[data-theme="light"] {
   --blue-10: #F5F2FF;
   --blue-9: #EAE6FE;
   --blue-8: #CBC0FD;
@@ -22,6 +9,19 @@
   --blue-3: #1C0193;
   --blue-2: #15006E;
   --blue-1: #0E004A;
+}
+
+[data-theme="light"] {
+  --blue-1: #F5F2FF;
+  --blue-2: #EAE6FE;
+  --blue-3: #CBC0FD;
+  --blue-4: #AB99FB;
+  --blue-5: #6D4DF8;
+  --blue-6: #2E01F5;
+  --blue-7: #2901DD;
+  --blue-8: #1C0193;
+  --blue-9: #15006E;
+  --blue-10: #0E004A;
 }
 
 $blue-1: var(--blue-1);
