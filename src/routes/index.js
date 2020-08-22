@@ -1,6 +1,7 @@
 import React from "react";
 
 const HomePage = React.lazy(() => import("../pages/Homepage"))
+const Experience = React.lazy(() => import("../pages/Experience"))
 
 const routes = {
   children: [
@@ -8,6 +9,11 @@ const routes = {
       path: "/",
       exact: true,
       component: HomePage
+    },
+    {
+      path: "/experience",
+      exact: true,
+      component: Experience
     }
   ]
 }
