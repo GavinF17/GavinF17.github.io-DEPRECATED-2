@@ -1,6 +1,12 @@
 @import "node_modules/hamburgers/_sass/hamburgers/hamburgers";
 
 .navigation {
+  z-index: 1;
+
+  &.open {
+    background-color: $blue-3;
+  }
+
   .navbar-toggler, .navbar-toggler:active, .navbar-toggler:hover, .navbar-toggler:focus, button {
     padding: 0;
     border: none;

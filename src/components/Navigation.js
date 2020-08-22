@@ -12,7 +12,7 @@ export const Navigation = () => {
   const toggleNavbar = () => setOpen(!open);
 
   return (
-    <Navbar expand="md" className="navigation">
+    <Navbar expand="md" className={"navigation" + (open ? " open" : "")}>
       <NavbarToggler onClick={toggleNavbar} >
         <button className={"hamburger hamburger--collapse" + (open ? " is-active" : "")} type="button">
           <span className="hamburger-box">
