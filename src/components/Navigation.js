@@ -35,11 +35,6 @@ export const Navigation = () => {
               <NavLink>Experience</NavLink>
             </Link>
           </NavItem>
-          <NavItem>
-            <Link to={"/blog"}>
-              <NavLink>Blog</NavLink>
-            </Link>
-          </NavItem>
         </Nav>
       </Collapse>
     </Navbar>
