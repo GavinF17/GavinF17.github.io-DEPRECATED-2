@@ -6,16 +6,12 @@ import ContentLayout from "./ContentLayout";
 export const Layout = ({routes}) => {
   const location = useLocation();
 
-  console.log(location)
-
   const Layout = (() => {
     if (location.pathname.match("^/experience")) {
       return ContentLayout;
     } else {
       return GeneralLayout;
     }
-
-
   })();
 
   return (
