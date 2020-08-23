@@ -6,6 +6,7 @@ import Nav from "reactstrap/es/Nav";
 import NavItem from "reactstrap/es/NavItem";
 import NavLink from "reactstrap/es/NavLink";
 import {Link} from "react-router-dom";
+import {ThemeToggle} from "./ThemeToggle";
 
 export const Navigation = () => {
   const [open, setOpen] = useState(false);
@@ -22,7 +23,6 @@ export const Navigation = () => {
         </button>
       </NavbarToggler>
 
-
       <Collapse isOpen={open} navbar>
         <Nav className="mr-auto" navbar>
           <NavItem>
@@ -34,6 +34,9 @@ export const Navigation = () => {
             <Link to={"/experience"}>
               <NavLink>Experience</NavLink>
             </Link>
+          </NavItem>
+          <NavItem>
+            <ThemeToggle/>
           </NavItem>
         </Nav>
       </Collapse>
